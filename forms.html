@@ -1,0 +1,59 @@
+<!--
+Create a html form to register a new student
+Gather the following information using the relevent form elements:
+Name, Date of Birth, Gender, Address, Telephone, Email Address, Course
+The form should have two buttons:
+Register
+Cancel
+All the form elements are not optional.
+Incorporate appropriate labels for the form elements.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./style.css">
+     <title>Forms</title>
+</head>
+<body>
+     <div class="container">
+          <h2>Register</h2>
+          <form action="">
+               <label for="name">Name:</label>
+               <input type="text" name="name" id="name" placeholder="Glen Horton" required>
+               <br>
+               <label for="Date">Date of birth: </label>
+               <input type="date" name="date" id="date" required>
+               <br>
+               <fieldset>
+                    <legend aria-required="true">Gender</legend>
+                    <input type="radio" name="gender" id="male" >
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" >
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" >
+                    <label for="other">Other</label>
+               </fieldset>
+               <br>
+               <label for="address">Address</label>
+               <input type="text" name="address" id="address" placeholder="1368 Badog Pike" required>
+               <br>
+               <label for="telephone">Telephone</label>
+               <input type="tel" name="telephone" id="telephone" placeholder="(939) 593-5802" required>
+               <br>
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email" placeholder="nek@ga.sa" required>
+               <br>
+               <label for="course">Course:</label>
+               <input type="text" name="course" id="course" placeholder="Web Development" required>
+               <br>
+               <button type="submit">Register</button>
+               <button type="reset">Cancel</button>
+               
+          </form>
+     </div>
+     
+</body>
+</html>
